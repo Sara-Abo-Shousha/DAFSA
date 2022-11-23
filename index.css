@@ -1,0 +1,139 @@
+html,
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000000;
+    padding: 1px;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+h1{
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+}
+.g-container{
+    margin: auto;
+    top: 0;
+    right: 0;
+    padding-right: 150px;
+
+}
+.inputContainer{
+    left: 0;
+    top:40%;
+position: fixed;
+}
+
+.main-container {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    left: 2em;
+    position: fixed;
+    margin: 25px auto 30px;
+
+
+}
+
+.main-description {
+    width: 300px;
+    color: rgb(255, 255, 255);
+left: 2em;
+position: fixed;
+    margin: 0 auto 30px;
+    line-height: 25px;
+}
+
+.graphVis {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+    margin: 50px 0px 0px 0px;
+}
+
+.dawg-graph {
+    color: rgb(255, 255, 255);
+
+    margin: 100px 0px;
+}
+
+hr {
+    color: rgb(255, 255, 255);
+
+    width: 40%;
+}
+
+.graphVis .title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 1px;
+    position: absolute;
+    margin-left:35em;
+}
+
+.graphVis .g-container {
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+}
+
+.inputContainer input[type=text] {
+
+    border: none;
+    float: none;
+    display: block;
+    height: 70px;
+    width: 300px;
+    font-size: 14pt;
+    text-align: center;
+    margin: 0px 1em 10px;
+    border-radius: 150px;
+    border: 1px solid rgb(100, 100, 100);
+    transition: 0.2s;
+}
+
+.inputContainer input[type=text]:focus {
+    outline:auto;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+}
+
+.build-btn {
+    display: flex;
+    
+}
+
+.build-btn>button {
+    margin-left:2em;
+
+    width: 10rem;
+    padding: 20px 40px;
+    display: inline;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: rgba(255, 59, 59, 0);
+}
+
+.build-btn>button:hover,
+.build-btn>button:focus {
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.build-btn>button:focus {
+    outline: none;
+
+}

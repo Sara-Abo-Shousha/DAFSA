@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./lib/main.js"></script>
+    <script src="./viz.js/viz.js"></script>
+    <script src="./viz.js/full.render.js"></script>
+    <script src="./utils/index.js"></script>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+    <title>DAFSA Visualizer</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1>DAFSA Visualizer</h1>
+
+        <div class="main-description">
+          A simple Trie and DAFSA builder,<br />
+          Enter Input
+        </div>
+        <div class="inputContainer">
+          <input type="text" placeholder="sara, lara, yara" />
+          <div class="build-btn"><button>BUILD</button></div>
+        </div>
+      </header>
+    </div>
+
+    <div class="graphVis trie-graph">
+      <h4 class="title">Trie</h4>
+
+      <div
+        class="g-container"
+        style="position: absolute; margin-right: 24em; margin-top: 6em"></div>
+    </div>
+    <div class="graphVis dawg-graph" style="left: 500px; top: -50px; z-index: 1000">
+      <h4 class="title">DAFSA</h4>
+
+      <div
+        class="g-container"
+        style="position: absolute; margin-right: 30em; margin-top: 6em; z-index: -1"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
